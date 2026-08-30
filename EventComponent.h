@@ -24,4 +24,4 @@ public:
         throw std::logic_error("Cannot remove child from leaf component.");
     }
 };
-#endif
+#endif //EVENTCOMPONENT_H

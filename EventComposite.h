@@ -1,5 +1,5 @@
-#ifndef EVENTGROUP_H
-#define EVENTGROUP_H
+#ifndef EVENTCOMPOSITE_H
+#define EVENTCOMPOSITE_H
 
 #include "EventComponent.h"
 #include <string>
@@ -15,13 +15,15 @@ public:
     explicit EventComposite(std::string name);
     ~EventComposite() override;
 
+    //Basic vector operation
     void add(EventComponent *component) override;
     void remove(EventComponent *component) override;
 
+    //Basic Info functions
     void open() override;
     void close() override;
     void reportStatus() const override;
     int getCapacity() const override;
 };
 
-#endif // EVENTGROUP_H
+#endif //EVENTCOMPOSITE_H
