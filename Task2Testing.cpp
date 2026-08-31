@@ -3,7 +3,14 @@
 #include "EventComponent.cpp"
 #include <iostream>
 
-
+/**
+ * @brief Task 2 demonstration: builds a three-level nested Composite tree
+ * (a root Venue containing two Zones, one of which contains a nested
+ * Precinct) with five different concrete Leaf types, then exercises the
+ * common EventComponent operations (open, reportStatus, getCapacity)
+ * through the Composite interface before releasing the whole tree with a
+ * single delete on the root.
+ */
 void testTask2() {
     //root
     EventComposite* rootFestival = new EventComposite("City Lights Festival");

@@ -1,0 +1,11 @@
+<map id="CascadingZone" name="CascadingZone">
+<area shape="rect" id="Node000001" title="A Composite group (EventGroup) that also plays both the Subject and Observer roles,..." alt="" coords="135,152,258,177"/>
+<area shape="rect" id="Node000002" href="$classEventComposite.html" title="GoF Composite (EventGroup). Owns a collection of EventComponent children, which may themselves be Lea..." alt="" coords="8,79,137,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,108,178,149,175,154,103,113"/>
+<area shape="rect" id="Node000003" href="$classEventComponent.html" title="GoF Component. The common interface shared by every operational unit (Leaf) and every group of units ..." alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,44,75,79,70,79,70,44"/>
+<area shape="rect" id="Node000004" href="$classSubject.html" title="GoF Subject role. Owns the (non&#45;owning, see Observer.h) list of registered Observers and is responsib..." alt="" coords="161,79,232,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,118,199,152,194,152,194,118"/>
+<area shape="rect" id="Node000005" href="$classObserver.html" title="GoF Observer role. Anything that needs to react to an EventNotice implements update()." alt="" coords="256,79,337,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="271,114,215,154,211,150,268,110"/>
+</map>

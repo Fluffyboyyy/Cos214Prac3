@@ -1,0 +1,7 @@
+<map id="FirstAidTent" name="FirstAidTent">
+<area shape="rect" id="Node000001" title="Concrete Leaf and ConcreteObserver. Provides first aid (the MedicalTeam unit)." alt="" coords="89,79,187,104"/>
+<area shape="rect" id="Node000002" href="$classEventComponent.html" title="GoF Component. The common interface shared by every operational unit (Leaf) and every group of units ..." alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,39,129,77,125,80,91,43"/>
+<area shape="rect" id="Node000003" href="$classObserver.html" title="GoF Observer role. Anything that needs to react to an EventNotice implements update()." alt="" coords="164,5,245,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,43,151,80,147,77,182,39"/>
+</map>

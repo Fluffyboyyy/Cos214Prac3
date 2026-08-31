@@ -1,0 +1,7 @@
+<map id="EventComposite" name="EventComposite">
+<area shape="rect" id="Node000001" title="GoF Composite (EventGroup). Owns a collection of EventComponent children, which may themselves be Lea..." alt="" coords="8,79,137,104"/>
+<area shape="rect" id="Node000003" href="$classCascadingZone.html" title="A Composite group (EventGroup) that also plays both the Subject and Observer roles,..." alt="" coords="11,152,134,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="75,118,75,152,70,152,70,118"/>
+<area shape="rect" id="Node000002" href="$classEventComponent.html" title="GoF Component. The common interface shared by every operational unit (Leaf) and every group of units ..." alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,44,75,79,70,79,70,44"/>
+</map>
