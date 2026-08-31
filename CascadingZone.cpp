@@ -25,3 +25,27 @@ void CascadingZone::issueNotice(NoticeType type, const std::string &msg, int sev
     std::cout << "\n>>> [ORIGIN: " << zoneName << "] Broadcaster issuing notice: " << msg << " <<<\n";
     Subject::notify(notice);
 }
+
+void CascadingZone::transferChild(EventComponent *child, CascadingZone *newParent)
+{
+    if (!child || !newParent || newParent == this)
+    {
+        return;
+    }
+
+    this->remove(child); // ownership leaves this zone; child is NOT deleted
+
+    Observer *childObserver = dynamic_cast<Observer *>(child);
+    if (childObserver)
+    {
+        this->detach(childObserver); // safe no-op if it was never registered here
+    }
+
+    newParent->add(child); // ownership moves to the new zone
+    if (childObserver)
+    {
+        newParent->attach(childObserver); // observer registration moves to the new zone
+    }
+
+    std::cout << "[Reorg] Unit transferred from " << zoneName << " to " << newParent->getName() << ".\n";
+}
