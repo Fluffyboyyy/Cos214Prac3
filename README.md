@@ -26,5 +26,5 @@ Make
 Run program
 
 ```
-./eventFlow
+./eventflow
 ```
