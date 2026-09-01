@@ -16,3 +16,15 @@ doxygen Doxyfile
 
 This produces `docs/html/index.html`. Open it in a browser to browse the
 class list, class diagrams (via Graphviz) and per-member documentation.
+
+Compiling instruction
+
+```
+Make
+```
+
+Run program
+
+```
+./eventFlow
+```
