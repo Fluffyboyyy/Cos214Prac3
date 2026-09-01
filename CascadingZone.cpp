@@ -11,11 +11,15 @@ void CascadingZone::update(const EventNotice &notice)
               << "' from " << notice.senderName
               << ". Cascading down to registered child observers\n";
 
-    if (notice.type == NoticeType::CLOSE || notice.type == NoticeType::EVACUATE)
-    {
-        this->close();
-    }
-
+    // This zone does not force a blanket close() on every owned child here.
+    // EventComposite::close() would fan out to every child regardless of
+    // what that child's own update() decides, which defeated the purpose
+    // of Observer: a unit like FirstAidTent deliberately stays open through
+    // an EVACUATE, but a blanket close() overrode that decision and, since
+    // its own update() for OPEN never re-opens it, left it stuck closed
+    // even after the notice that follows says to resume normal operations.
+    // Each registered observer below decides its own reaction to the
+    // notice through its own update(), which is what notify() delivers.
     Subject::notify(notice);
 }
 
